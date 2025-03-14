@@ -1,12 +1,13 @@
 
 import './App.css'
-import Hero from './components/Hero'
+import FeaturesTab from './components/FeaturesTab'
 
 function App() {
 
   return (
     <div>
       {/* <Hero/> */}
+      <FeaturesTab/>
     </div>
   )
 }
