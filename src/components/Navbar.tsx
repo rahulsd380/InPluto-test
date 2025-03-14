@@ -1,9 +1,42 @@
+import { Link } from "react-router-dom";
+import Container from "./Container";
 
 
 const Navbar = () => {
+    const navlinks = [
+        {
+            label: "Home",
+            path: "/",
+        },
+        {
+            label: "About",
+            path: "/",
+        },
+        {
+            label: "Contact",
+            path: "/",
+        },
+    ]
     return (
-        <div className="font-Satoshi-normal">
-            Navbar
+        <div className="bg-[#06050B] py-5">
+            <Container>
+                <div className="flex items-center justify-between">
+                    <Link to={"/"} className="font-Satoshi-900 text-white">
+                        Inpluto
+                    </Link>
+
+                    <div className="flex items-center gap-5">
+                        {
+                            navlinks.map((link, index) => (
+                                <Link to={link.path} key={index} className="text-white font-Satoshi-500">
+                                    {link.label}
+                                </Link>
+                            ))
+                        }
+                        <button className="border border-white px-4 py-[10px] rounded-lg text-white font-Satoshi-500 cursor-pointer">Get Started</button>
+                    </div>
+                </div>
+            </Container>
         </div>
     );
 };

@@ -1,19 +1,36 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Satoshi";
-  src: local("Satoshi"),
+  font-family: "Satoshi-700";
+  src: local("Satoshi-700"),
     url("./assets/fonts/Satoshi-Bold.otf") format("opentype");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "Satoshi-normal";
-  src: local("Satoshi-normal"),
+  font-family: "Satoshi-900";
+  src: local("Satoshi-900"),
+    url("./assets/fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Satoshi-400";
+  src: local("Satoshi-400"),
     url("./assets/fonts/Satoshi-Regular.otf") format("opentype");
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Satoshi-500";
+  src: local("Satoshi-500"),
+    url("./assets/fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
 @theme {
-  --font-Satoshi-normal: Satoshi-normal, "sans-serif";
+  --font-Satoshi-400: Satoshi-400, "sans-serif";
+  --font-Satoshi-500: Satoshi-500, "sans-serif";
+  --font-Satoshi-bold: Satoshi-700, "sans-serif";
+  --font-Satoshi-900: Satoshi-900, "sans-serif";
 }
