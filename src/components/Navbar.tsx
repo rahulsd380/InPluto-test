@@ -17,7 +17,7 @@ const Navbar = () => {
 
             <Container>
                 <div className="relative z-10 flex items-center justify-between py-6">
-                    <Link to={"/"} className="font-Satoshi-900 text-white">
+                    <Link to={"/"} className="font-Satoshi-900 text-white text-2xl">
                         Inpluto
                     </Link>
 
@@ -27,14 +27,14 @@ const Navbar = () => {
                                 {link.label}
                             </Link>
                         ))}
-                        <button className="border border-white px-4 py-[10px] rounded-lg text-white font-Satoshi-500 cursor-pointer">
+                        <button className="border border-white px-4 py-[10px] rounded-lg text-white font-Satoshi-500 cursor-pointer transition-all duration-300 ease-in-out transform active:scale-95">
                             Get Started
                         </button>
                     </div>
                 </div>
 
                 {/* Hero Section */}
-                <Hero/>
+                <Hero />
             </Container>
         </div>
     );
