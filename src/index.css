@@ -31,6 +31,12 @@
 @theme {
   --font-Satoshi-400: Satoshi-400, "sans-serif";
   --font-Satoshi-500: Satoshi-500, "sans-serif";
-  --font-Satoshi-bold: Satoshi-700, "sans-serif";
+  --font-Satoshi-700: Satoshi-700, "sans-serif";
   --font-Satoshi-900: Satoshi-900, "sans-serif";
+
+  --bg-purple-gradient: linear-gradient(180deg, #8C52FF 0%, #A276FA 100%);
+}
+
+.bg-purple-gradient {
+  background: var(--bg-purple-gradient);
 }
